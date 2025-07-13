@@ -1,0 +1,42 @@
+[icons]
+icons = "material-nf"
+[theme.overrides]
+info_bg = "#00000000"
+info_fg = "#ffffff"
+idle_bg = "#00000000"
+idle_fg = "#ffffff"
+good_bg = "#00000000"
+good_fg = "#ffffff"
+warning_bg = "#00000000"
+warning_fg = "#ffffff"
+critical_bg = "#00000000"
+critical_fg = "#ffffff"
+separator_bg = "#00000000"
+separator_fg = "#ffffff"
+separator = "  "
+alternating_tint_bg = "#00000000"
+alternating_tint_fg = "#ffffff"
+
+[[block]]
+block = "music"
+player = "spotify"
+format = "$icon  $combo|"
+
+[[block]]
+block = "net"
+format = "$icon  $ssid"
+
+[[block]]
+block = "sound"
+show_volume_when_muted = true
+format = "$icon  $volume"
+
+[[block]]
+block = "battery"
+format = "$icon  $percentage"
+full_format = "$icon  $percentage"
+
+[[block]]
+block = "time"
+interval = 60
+format = "$timestamp.datetime(f:'%a %b %d %Y ▪ %-I:%M %p')"
